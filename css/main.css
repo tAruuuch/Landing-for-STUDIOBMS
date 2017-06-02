@@ -24,58 +24,12 @@ a:hover {
   height: 100%;
 }
 
-/*nav {
-  width: 100%;
-  z-index: 100;
-  position: fixed;
-  display: flex;
-  text-align: center;
-}
-
-nav ul {
-  list-style: none;
-  overflow: hidden;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  border-bottom: 1px solid #e7e7e7;
-  background-color: rgba(244, 244, 244, 1);
-}
-
-nav ul li {
-  display: inline-flex;
-}
-
-nav ul li a {
-  display: block;
-  color: #666;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-nav ul li a:hover {
-  background-color: #DDDDDD;
-  text-decoration: none;
-}
-
-nav ul li a .active {
-  background-color: #007fff;
-  text-decoration: none;
-}*/
-
 footer {
   border-top: 1px solid #e7e7e7;
   background-color: #f3f3f3;
   padding: 10px 0;
   bottom: 0;
 }
-
-/*@media screen and (max-width: 600px) {
-  nav ul li {
-    float: none;
-  }
-}*/
 
 header {
   min-height: 100%;
@@ -313,7 +267,25 @@ footer .links ul li:first-child {
 }
 
 .swiper-slide img {
-  width: 50%;
+  width: 100%;
+}
+
+@media (min-width: @screen-sm-min) {
+  .swiper-slide img {
+    width: 100%;
+  }
+}
+
+@media (min-width: @screen-md-min) {
+  .swiper-slide img {
+    width: 100%;
+  }
+}
+
+@media (min-width: @screen-lg-min) {
+  .swiper-slide img {
+    width: 50%;
+  }
 }
 
 .swiper-pagination {
