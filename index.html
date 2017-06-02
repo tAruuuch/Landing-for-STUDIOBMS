@@ -5,45 +5,38 @@
     <meta charset="utf-8">
     <title>Веб-система для підтримки салонів краси by Stepanov V.P.</title>
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poiret+One|Roboto">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/css/swiper.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
     <script defer src="js/main.js"></script>
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
   </head>
   <body>
 
     <div class="wrapper">
 
-      <nav id="menu">
-        <ul>
-          <li>
-            <a href="#header">Головна</a>
-          </li>
-          <li>
-            <a href="#how-to-work">Як працює?</a>
-          </li>
-          <li>
-            <a href="#about">Переваги</a>
-          </li>
-          <li>
-            <a href="#features">Особливості</a>
-          </li>
-          <li>
-            <a href="#we-work-with">Нас обрали</a>
-          </li>
-          <li>
-            <a href="#download">Завантажити</a>
-          </li>
-        </ul>
+      <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="#">studiobms</a>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-item nav-link" href="#header">Головна</a>
+            <a class="nav-item nav-link" href="#how-to-work">Як працює?</a>
+            <a class="nav-item nav-link" href="#about">Переваги</a>
+            <a class="nav-item nav-link" href="#features">Особливості</a>
+            <a class="nav-item nav-link" href="#we-work-with">Нас обрали</a>
+            <a class="nav-item nav-link" href="#download">Завантажити</a>
+          </div>
+        </div>
       </nav>
 
       <header id="header">
-        <div class="header-pic">
-
-        </div>
+        <div class="header-pic"></div>
         <div class="text-on-header">
           <p class="icon">S</p>
           <p class="title">studiobms</p>
@@ -66,7 +59,9 @@
               <div class="content text col-12">
                 <div class="row">
                   <div class="col-lg-5">
-                    <iframe width="640" height="420" src="https://www.youtube.com/embed/oIfaVMBhGTo" frameborder="0" allowfullscreen></iframe>
+                    <div class="intrinsic-container">
+                      <iframe src="https://www.youtube.com/embed/oIfaVMBhGTo" allowfullscreen></iframe>
+                    </div>
                   </div>
                   <div class="col-lg-7 text">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse gravida sapien pulvinar arcu rhoncus interdum. Ut mattis nisi sed ante dignissim pretium. Etiam at nibh lacus. Fusce auctor dui eu magna finibus, ut venenatis elit pretium. Integer porttitor placerat ex ut porta. Maecenas in bibendum felis. In auctor magna magna, sit amet suscipit ipsum venenatis non. Ut ornare velit nibh, eu aliquet mauris fermentum posuere. Quisque convallis lectus felis, vitae posuere metus cursus at. In vitae bibendum ligula, ut molestie justo. Suspendisse nec condimentum elit, in maximus nunc. Donec pharetra ligula quis nisl aliquam interdum. Aliquam augue est, interdum id velit ac, aliquet tristique lacus.
@@ -209,11 +204,31 @@
 
               <div class="content text col-12">
                 <div class="row">
-                  <div class="col-lg-2 icon">
-                    <i class="fa fa-github" aria-hidden="true"></i>
-                  </div>
-                  <div class="col-lg-6 text">
-                    123
+                  <div class="col-lg-8 icon">
+                    <div class="row">
+                      <div class="col-lg-6">
+                        <i class="fa fa-github" aria-hidden="true"></i>
+                        <p class="description">
+                          Опис
+                        </p>
+                        <p>
+                          <a href="https://github.com/stenvix">
+                            <button type="button" class="btn btn-primary">Source code</button>
+                          </a>
+                        </p>
+                      </div>
+                      <div class="col-lg-6">
+                        <i class="fa fa-download" aria-hidden="true"></i>
+                        <p class="description">
+                          Опис
+                        </p>
+                        <p>
+                          <a href="https://github.com/stenvix">
+                            <button type="button" class="btn btn-success">Download now</button>
+                          </a>
+                        </p>
+                      </div>
+                    </div>
                   </div>
                   <div class="col-lg-4">
                     <div class="list-group">
