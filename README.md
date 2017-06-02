@@ -12,7 +12,7 @@ Used:
 - CSS3
   + Bootstrap v4.0.0-alpha.6
 - JS
-- Gulp
+  + jQuery
 
 Contacts with me:
 - [LINKEDIN](https://www.linkedin.com/in/dmytro-artemchuk-a3737211a/)
