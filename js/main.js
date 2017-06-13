@@ -8,10 +8,12 @@ $(document).ready(function() {
     return false;
   });
 
-  var w_h = window.innerWidth;
+  var w_h = document.documentElement.clientWidth;
   var slides = 5;
 
-  if (w_h <= 480) {
+  if (w_h <= 320) {
+    slides = 1;
+  } else if (w_h <= 480 && w_h <= 568) {
     slides = 2;
   } else if (w_h <= 767) {
     slides = 3;
@@ -23,9 +25,7 @@ $(document).ready(function() {
 
   var mySwiper = new Swiper ('.swiper-container', {
       direction: 'horizontal',
-      pagination: '.swiper-pagination',
       slidesPerView: slides,
-      paginationClickable: true,
       spaceBetween: 30,
       loop: true
     });
