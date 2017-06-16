@@ -53,30 +53,29 @@ a:hover {
 /*Header*/
 
 .header-pic {
+  position: relative;
   background: #314a7f;
   width: 100%;
-  height: 700px;
+  height: 100vh;
   padding-top: 50px;
 }
 
 .text-on-header {
-  -ms-flex-item-align: center;
-  align-self: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-direction: column;
+          flex-direction: column;
   text-align: center;
-  height: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
   color: #fff;
 }
 
@@ -104,30 +103,6 @@ a:hover {
   color: #ccc;
   font-size: 1rem;
   margin-top: 15px;
-}
-
-@media (max-width: 480px) and (max-width: 767px) {
-  .header-pic {
-    height: 400px;
-  }
-}
-
-@media (max-width: 767px) {
-  .header-pic {
-    height: 500px;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 979px) {
-  .header-pic {
-    height: 600px;
-  }
-}
-
-@media (min-width: 1200px) {
-  .header-pic {
-    height: 700px;
-  }
 }
 
 
@@ -300,6 +275,7 @@ article header {
     height: 150px;
   }
 }
+
 /*-----*/
 
 
